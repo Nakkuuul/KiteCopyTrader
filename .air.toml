@@ -1,0 +1,19 @@
+# .air.toml
+root = "."                     # project root
+tmp_dir = "tmp"
+
+[build]
+cmd = "go build -o tmp/main ./cmd"
+bin = "tmp/main"
+full_bin = "tmp/main"
+delay = 1000
+exclude_dir = ["tmp"]
+
+[log]
+time = true
+
+[color]
+main = "yellow"
+watcher = "cyan"
+build = "green"
+runner = "magenta"
